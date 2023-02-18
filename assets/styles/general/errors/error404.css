@@ -1,0 +1,32 @@
+/*
+	Импорт базовых стилей
+*/
+
+@import url(/saycheese/assets/styles/import/basic.css);
+
+.error404_container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+.error404_wrapper{
+	margin: auto;
+	text-align: center;
+}
+.error404_img{
+	width: calc(1vh + 1vw * 10);
+	height: calc(1vh + 1vw * 10);
+	background-image: url(/saycheese/assets/images/icons/error404.png);
+	background-size: cover;
+	margin: 0 auto;
+}
+.error404_headline{
+	font-family: 'Montserrat-Black';
+	font-size: calc(1vh + 1vw * 3);
+	color: #000;
+	margin-top: calc(1vh + 1vw * 1);
+}
+.error404_text{
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * 1);
+}
