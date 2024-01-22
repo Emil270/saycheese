@@ -1,0 +1,92 @@
+/*
+	Импорт базовых стилей
+*/
+
+@import url(/saycheese/assets/styles/import/basic.css);
+
+/*
+	Импорт стилей для блока с ошибкой
+*/
+
+@import url(/saycheese/assets/styles/import/message_error.css);
+
+/*
+	Форма регистрации
+*/
+
+.wrapper{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+.form-action{
+	margin: auto;
+	width: 600px;
+	height: 750px;
+	background: #fff;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+	position: relative;
+	display: flex;
+}
+form{
+	margin: auto;
+}
+.headline-block{
+	width: 100%;
+}
+.headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	text-align: center;
+	font-size: 35px;
+}
+.inputs-block{
+	margin-top: 30px;
+}
+input:first-child{
+	margin-top: 40px;
+}
+input{
+	border: none;
+	outline: none;
+	box-shadow: none;
+	background: transparent;
+	border-bottom: 1px solid #8E997E;
+	width: 400px;
+	height: 35px;
+	font-family: 'Montserrat-Light';
+	font-size: 15px;
+	margin-bottom: 40px;
+}
+.btn-reg{
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 65px;
+	background-color: #747E65;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: 'Montserrat-Medium';
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+.btn-reg:hover{
+	background-color: #8E997E;
+}
+.login-block{
+	margin-top: calc(1vh + 1vw * 2);
+}
+.login{
+	font-family: 'Montserrat-Light';
+	font-size: 15px;
+	color: #8E997E;
+	text-align: center;
+}
+span{
+	text-decoration: solid !important;
+	color: #747E65;
+}

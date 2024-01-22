@@ -1,0 +1,291 @@
+/*
+	Импорт базовых стилей
+*/
+
+@import url(/saycheese/assets/styles/import/basic.css);
+
+/*
+	Импорт стилей для нава и футера
+*/
+
+@import url(/saycheese/assets/styles/import/nav_footer.css);
+
+/*
+	Импорт стилей для блока с сообщением о статусе операции
+*/
+
+@import url(/saycheese/assets/styles/import/message.css);
+
+/*
+	Импорт стилей для блока с ошибкой
+*/
+
+@import url(/saycheese/assets/styles/import/message_error.css);
+
+*{
+	overflow-x: hidden;
+}
+.services-content{
+	width: 100%;
+	height: 2500px;
+}
+.photographer-service-img-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 33);
+	display: flex;
+	background-image: url(/saycheese/assets/images/bg/bg_service1.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-top: calc(1vh + 1vw * 3.5);
+}
+.photographer-service-img-text-block{
+	margin: calc(1vh + 1vw * 6) auto;
+	position: relative;
+}
+.photographer-service-text1{
+	font-family: 'Montserrat-Bold';
+	color: #fff;
+	text-align: center;
+	font-size: calc(1vh + 1vw * 1.1);
+}
+.photographer-service-text1::before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translateX(50%);
+	transform: translateY(-40%);
+	width: calc(.1vh + .1vw * .9);
+	height: calc(1vh + 1vw * 4);
+	background-color: #fff;
+}
+.photographer-service-text2{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	text-align: center;
+	font-size: calc(1vh + 1vw * 1.1);
+	margin-top: calc(1vh + 1vw * 8);
+}
+.photographer-service-form-wrapper{
+	width: 100%;
+	height: calc(1vh + 1vw * 35);
+	display: flex;
+	margin-top: calc(1vh + 1vw * -8);
+}
+.photographer-service-form-block{
+	width: 45%;
+	height: 90%;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+	background-color: #fff;
+	margin: calc(1vh + 1vw * 1) auto;
+	position: relative;
+}
+.photographer-service-form{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.photographer-service-input-wrapper{
+	width: 100%;
+	height: 95%;
+	display: flex;
+}
+.photographer-service-input-block{
+	margin: auto;
+}
+.service-input{
+	width: calc(1vh + 1vw * 20);
+	height: calc(1vh + 1vw * 1.5);
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid #8E997E;
+	margin-bottom: calc(1vh + 1vw * 1);
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .3);
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+	cursor: pointer;
+}
+input[type="time"]::-webkit-calendar-picker-indicator{
+	cursor: pointer;
+}
+select{
+	appearance: none;
+	background-image: url(/saycheese/assets/images/icons/select_arrow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: calc(1vh + 1vw * .3);
+	background-position: calc(1vh + 1vw * .2) center;
+	width: calc(1vh + 1vw * 20);
+	height: calc(1vh + 1vw * 1.3);
+	padding: calc(.6vh + .6vw * .2);
+	padding-left: calc(.6vh + .6vw * 3);
+	outline: 0;
+	border: 0;
+	background-color: #F1F1F1;
+	font-family: 'Montserrat-Light';
+	font-weight: 200;
+	font-size: calc(1vh + 1vw * .25);
+	transition: all .3s ease-in-out;
+}
+select > option{
+	background: #fff;
+}
+.photographer-style{
+	margin-top: calc(1vh + 1vw * .1);
+}
+.photographer-servie-btn-send{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.5);
+	background-color: #747E65;
+	display: flex;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	border: 0;
+	outline: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+}
+.photographer-servie-btn-send:hover{ 
+	background-color: #8E997E;
+}
+.no-login{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.5);
+	background-color: #747E65;
+	display: flex;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+}
+.no-login:hover{ 
+	background-color: #8E997E;
+}
+.btn-text{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	margin: auto;
+	font-size: calc(1vh + 1vw * .25);
+}
+.photoshop-service-img-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 33);
+	display: flex;
+	background-image: url(/saycheese/assets/images/bg/bg_service2.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-top: calc(1vh + 1vw * 3.5);
+}
+.photoshop-service-img-text-block{
+	margin: calc(1vh + 1vw * 6) auto;
+	position: relative;
+}
+.photoshop-service-text1{
+	font-family: 'Montserrat-Bold';
+	color: #fff;
+	text-align: center;
+	font-size: calc(1vh + 1vw * 1.1);
+}
+.photoshop-service-text1::before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translateX(50%);
+	transform: translateY(-40%);
+	width: calc(.1vh + .1vw * .9);
+	height: calc(1vh + 1vw * 4);
+	background-color: #fff;
+}
+.photoshop-service-text2{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	text-align: center;
+	font-size: calc(1vh + 1vw * 1.1);
+	margin-top: calc(1vh + 1vw * 8);
+}
+.photoshop-service-form-wrapper{
+	width: 100%;
+	height: calc(1vh + 1vw * 30);
+	display: flex;
+	margin-top: calc(1vh + 1vw * -8);
+	overflow-y: hidden;
+}
+.photoshop-service-form-block{
+	width: 40%;
+	height: 90%;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+	background-color: #fff;
+	margin: calc(1vh + 1vw * 1) auto;
+	position: relative;
+}
+.photoshop-service-form{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.photoshop-service-input-wrapper{
+	width: 100%;
+	height: 95%;
+	display: flex;
+}
+.photoshop-service-input-block{
+	margin: auto;
+}
+.photoshop-style{
+	margin-bottom: calc(1vh + 1vw * 1);
+}
+.input-file {
+	margin: calc(1vh + 1vw * .4) auto;
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: 0;
+	font-size: calc(1vh + 1vw * .25);
+	color: #fff;
+	text-align: center;
+	background-color: #c6c6c6;
+	border: 0;
+	line-height: calc(1vh + 1vw * 1.5);
+	height: calc(1vh + 1vw * 1.5);
+	padding: 0 calc(1vh + 1vw * 5.3) 0 calc(1vh + 1vw * 5.3);
+	transition: all .2s ease-in-out;
+	font-family: 'Montserrat-Light';
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.input-file:hover span{
+	background-color: #9f9f9f;
+}
+.photoshop-servie-btn-send{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.5);
+	background-color: #747E65;
+	display: flex;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	border: 0;
+	outline: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+}
+.photoshop-servie-btn-send:hover{
+	background-color: #8E997E;
+}

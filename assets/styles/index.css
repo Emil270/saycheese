@@ -1,0 +1,817 @@
+/*
+	Импорт базовых стилей
+*/
+
+@import url(/saycheese/assets/styles/import/basic.css);
+
+/*
+	Импорт стилей для нава и футера
+*/
+
+@import url(/saycheese/assets/styles/import/nav_footer.css);
+
+/*
+	Импорт стилей для блока с сообщением о статусе операции
+*/
+
+@import url(/saycheese/assets/styles/import/message.css);
+
+/*
+	Импорт стилей для блока с ошибкой
+*/
+
+@import url(/saycheese/assets/styles/import/message_error.css);
+
+*{
+	overflow-x: hidden;
+}
+
+/*
+	Шапка сайта
+*/
+
+header{
+	width: 100vw;
+	height: calc(1vh + 1vw * 48.8);
+	overflow-y: hidden;
+}
+.header-content{
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-wrap: wrap;
+}
+.header-line-block{
+	width: 7%;
+	height: 100%;
+	background-color: #747E65;
+}
+.header-welcome-contain{
+	width: 42%;
+	height: 100%;
+	background-color: #8E997E;
+}
+.header-wrapper{
+	margin-left: calc(1vh + 1vw * 2.7);
+}
+.header-welcome-headline-block{
+	width: calc(1vh + 1vw * 22);
+	margin-top: calc(1vh + 1vw * 12);
+	border-bottom: 1px solid #fff;
+	padding-bottom: calc(1vh + 1vw * .5);
+}
+.header-welcome-headline-block > .header-welcome-headline{
+	font-family: 'Montserrat-Light';
+	letter-spacing: calc(.1vh + .1vw * .2);
+	font-size: calc(1vh + 1vw * .8);
+	color: #fff;
+	font-weight: 300;
+}
+.header-image{
+	width: 51%;
+	height: 100%;
+	background-image: url(/saycheese/assets/images/bg/header__bg.jpg);
+	background-size: cover;
+}
+.header-subheadline-block{
+	margin-top: calc(1vh + 1vw * 13);
+}
+.header-subheadline-block > .header-subheadline{
+	font-family: 'Montserrat-Light';
+	letter-spacing: calc(.1vh + .1vw * .2);
+	font-size: calc(1vh + 1vw * .4);
+	color: #fff;
+	font-weight: 300;
+}
+.header-headline-name-block{
+	margin-top: calc(1vh + 1vw * 1);
+}
+.header-headline-name-block > .header-headline-name{
+	font-family: 'Montserrat-Black';
+	letter-spacing: calc(.1vh + .1vw * .2);
+	font-size: calc(1vh + 1vw * 3);
+	color: #000;
+}
+.header-headline-shortinfo-block{
+	margin-top: calc(1vh + 1vw * 1);
+}
+.header-headline-shortinfo-block > .header-headline-shortinfo{
+	font-family: 'Montserrat-Thin';
+	font-size: calc(1vh + 1vw * .3);
+	color: #fff;
+	font-weight: 100;
+}
+
+/*
+	Блок Добро пожаловать (ну типа)
+*/
+
+.aside-hi{
+	width: 100vw;
+	height: calc(1vh + 1vw * 28);
+	position: relative;
+}
+.hi-block{
+	width: inherit;
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.hi-image-container{
+	width: 63%;
+	height: 100%;
+	background-image: url(/saycheese/assets/images/bg/hi-bg.jpg);;
+	background-size: cover;
+}
+.hi-text-container{
+	width: 37%;
+	height: 100%;
+	position: relative;
+	display: flex;
+}
+.hi-wrapper{
+	margin: auto 0;
+	margin-left: calc(1vh + 1vw * 5);
+}
+.hi-text-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+}
+.hi-text-text{
+	margin-top: calc(1vh + 1vw * 2);
+	font-family: 'Montserrat-Light';
+	color: #000;
+	font-size: calc(1vh + 1vw * .25);
+	font-weight: 300;
+	word-wrap: break-word;
+}
+
+/*
+	Блок с краткой информацией
+*/
+
+.aside-short-info{
+	width: 100vw;
+	height: calc(1vh + 1vw * 35);
+	position: relative;
+}
+.short-info-block{
+	width: inherit;
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.short-info-container{
+	width: 40%;
+	height: 100%;
+	position: relative;
+	display: flex;
+}
+.short-info-wrapper{
+	margin: auto 0;
+	margin-left: calc(1vh + 1vw * 6.4);
+}
+.short-info-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+}
+.short-info-text{
+	margin-top: calc(1vh + 1vw * 2);
+	font-family: 'Montserrat-Light';
+	color: #000;
+	font-size: calc(1vh + 1vw * .25);
+	font-weight: 300;
+	line-height: calc(1vh + 1vw * .8);
+	word-wrap: break-word;	
+	width: calc(1vh + 1vw * 22);
+}
+.short-info-image{
+	width: 60%;
+	height: 100%;
+	background-image: url(/saycheese/assets/images/bg/short-info_bg.jpg);
+	background-size: cover;
+}
+
+/*
+	Блок-разделитель (полоса из разных оттенков зеленого)
+*/
+
+.separator{
+	width: 100%;
+	height: calc(1vh + 1vw * 10);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.separ-first{
+	width: 7%;
+	height: inherit;
+	background-color: #747E65;
+}
+.separ-second{
+	width: 42%;
+	height: inherit;
+	background-color: #8E997E;
+}
+.separ-third{
+	width: 51%;
+	height: inherit;
+	background-color: #747E65;
+}
+
+/*
+	Фотостудии
+*/
+
+.photostudio-block{
+	width: 100%;
+}
+.photostudio-wrapper{
+	width: 89%;
+	margin: 0 auto;
+}
+.photostudio-headline-block{
+	width: 40vw;
+	margin-top: calc(1vh + 1vw * 8);
+	display: flex;
+	margin-left: calc(1vh + 1vw * 1)
+}
+.photostudio-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+	margin: auto 0;
+	transition: all .2s ease-in-out;
+}
+.photostudio-headline:hover{
+	color: #8E997E;
+	transform: scale(.95);
+}
+.photostudio-items-list{
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: calc(1vh + 1vw * 2);
+	padding-top: calc(1vh + 1vw * 1);
+	padding: calc(1vh + 1vw * 1);
+}
+.photostudio-item{
+	width: calc(1vh + 1vw * 19);
+	height: calc(1vh + 1vw * 26); 
+	position: inherit;
+	box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.1);
+}
+.photostudio-item-img{
+	width: 100%;
+	height: calc(1vh + 1vw * 14);
+	background-size: cover;
+	background-position: center;
+}
+.photostudio-item-info-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 7.5);
+	position: relative;
+}
+.photostudio-item-name-price-block{
+	margin-left: calc(1vh + 1vw * 1);
+	margin-top: calc(1vh + 1vw * 1);
+	width: 80%;
+}
+.photostudio-item-name{
+	font-family: 'Montserrat-Medium';
+	color: #000;
+	font-size: calc(1vh + 1vw * .3);
+	word-wrap: break-word;
+}
+.photostudio-item-price{
+	font-family: 'Montserrat-Thin';
+	color: #8E997E;
+	font-size: calc(1vh + 1vw * .3);
+	word-wrap: break-word;
+	margin-top: calc(.2vh + .2vw * .7);
+}
+.photostudio-item-address-block{
+	margin-left: calc(1vh + 1vw * 1);
+	margin-top: calc(1vh + 1vw * 1);
+	width: 80%;
+}
+.photostudio-item-address{
+	font-family: 'Montserrat-Thin';
+	color: #000;
+	font-size: calc(1vh + 1vw * .3);
+	word-wrap: break-word;
+}
+.photostudio-item-btns-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.3);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.photostudio-btn-show-more{
+	width: 100%;
+	height: 100%;
+	background-color: #8E997E;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	overflow-y: hidden;
+}
+.photostudio-btn-show-more:hover{
+	background-color: #747E65;
+}
+
+/*
+	Каталог
+*/
+
+.catalog-block{
+	width: 100vw;
+}
+.catalog-wrapper{
+	width: 89%;
+	margin: 0 auto;
+}
+.catalog-headline-block{
+	width: 40vw;
+	margin-top: calc(1vh + 1vw * 5);
+	display: flex;
+	margin-left: calc(1vh + 1vw * 1)
+}
+.catalog-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+	margin: auto 0;
+	transition: all .2s ease-in-out;
+}
+.catalog-headline:hover{
+	color: #8E997E;
+	transform: scale(.95);
+}
+.catalog-items-list{
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: calc(1vh + 1vw * 2);
+	padding: calc(1vh + 1vw * 1);
+	padding-bottom: calc(1vh + 1vw * 7)
+}
+.catalog-item{
+	width: calc(1vh + 1vw * 19);
+	height: calc(1vh + 1vw * 26); 
+	margin-bottom: calc(1vh + 1vw * 2.2);
+	position: inherit;
+	box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.1);
+}
+.item-img-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 14);
+	border-bottom: 1px solid #cccccc;
+	display: flex;
+}
+.item-img{
+	width: 100%;
+	height: 100%;
+	background-size: calc(1vh + 1vw * 10);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+.item-info-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 7.5);
+	position: relative;
+}
+.item-name-block{
+	margin-left: calc(1vh + 1vw * 1);
+	margin-top: calc(1vh + 1vw * 1);
+	width: 80%;
+}
+.item-name{
+	font-family: 'Montserrat-Medium';
+	color: #000;
+	font-size: calc(1vh + 1vw * .3);
+	word-wrap: break-word;
+}
+.item-price-block{
+	margin-left: calc(1vh + 1vw * 1);
+	width: 80%;
+	padding-top: calc(1vh + 1vw * .1);
+}
+.item-price{
+	font-family: 'Montserrat-Light';
+	color: #000;
+	font-size: calc(1vh + 1vw * .25);
+	word-wrap: break-word;
+}
+.item-btns-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.3);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.btn-add-to-basket{
+	width: 50%;
+	height: 100%;
+	background-color: #747E65;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+.btn-add-to-basket:hover{
+	width: 80%;
+}
+.btn-show-more{
+	width: 50%;
+	height: 100%;
+	background-color: #8E997E;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+.btn-show-more:hover{
+	width: 80%;
+}
+.btn-link{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.btn-text{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	margin: auto;
+	font-size: calc(1vh + 1vw * .25);
+}
+
+/*
+	Услуга фотографа
+*/
+
+.services-block{
+	width: 100%;
+	padding-bottom: calc(1vh + 1vw * 7);
+	position: relative;
+}
+.photographer-service-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 35);
+	margin-top: calc(1vh + 1vw * 8);
+	display: flex;
+	justify-content: left;
+}
+.photographer-service-img-block{
+	width: 55%;
+	height: 90%;
+	background-image: url(/saycheese/assets/images/bg/bg_service1.jpg);
+	background-size: cover;
+	display: flex;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.3);
+	margin-top: calc(1vh + 1vw * 1);
+}
+.photographer-service-img-text-block{
+	margin: auto;
+	position: relative;
+}
+.photographer-service-text1{
+	font-family: 'Montserrat-Bold';
+	color: #fff;
+	text-align: center;
+	font-size: calc(1vh + 1vw * .8);
+}
+.photographer-service-text1::before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(50%);
+	transform: translateY(-60%);
+	width: calc(.1vh + .1vw * .5);
+	height: calc(1vh + 1vw * 4);
+	background-color: #fff;
+}
+.photographer-service-text2{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	text-align: center;
+	font-size: calc(1vh + 1vw * .8);
+	margin-top: calc(1vh + 1vw * 10);
+}
+.photographer-service-form-block{
+	width: 45%;
+	height: 90%;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+	background-color: #fff;
+	margin-top: calc(1vh + 1vw * 1);
+	position: relative;
+}
+.photographer-service-form{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.photographer-service-input-wrapper{
+	width: 100%;
+	height: 95%;
+	display: flex;
+}
+.photographer-service-input-block{
+	margin: auto;
+}
+.service-input{
+	width: calc(1vh + 1vw * 20);
+	height: calc(1vh + 1vw * 1.5);
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid #8E997E;
+	margin-bottom: calc(1vh + 1vw * 1);
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .3);
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+	cursor: pointer;
+}
+input[type="time"]::-webkit-calendar-picker-indicator{
+	cursor: pointer;
+}
+select{
+	appearance: none;
+	background-image: url(/saycheese/assets/images/icons/select_arrow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: calc(1vh + 1vw * .3);
+	background-position: calc(1vh + 1vw * .2) center;
+	width: calc(1vh + 1vw * 20);
+	height: calc(1vh + 1vw * 1.3);
+	padding: calc(.6vh + .6vw * .2);
+	padding-left: calc(.6vh + .6vw * 3);
+	outline: 0;
+	border: 0;
+	background-color: #F1F1F1;
+	font-family: 'Montserrat-Light';
+	font-weight: 200;
+	font-size: calc(1vh + 1vw * .25);
+	transition: all .3s ease-in-out;
+}
+select > option{
+	background: #fff;
+}
+.photographer-style{
+	margin-top: calc(1vh + 1vw * .1);
+}
+.photographer-servie-btn-send{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.5);
+	background-color: #747E65;
+	display: flex;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	border: 0;
+	outline: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+}
+.photographer-servie-btn-send:hover{
+	background-color: #8E997E;
+}
+.no-login{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.5);
+	background-color: #747E65;
+	display: flex;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	border: 0;
+	outline: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+}
+.no-login:hover{
+	background-color: #8E997E;
+}
+
+/*
+	Услуга специалиста по обработке фото
+*/
+
+
+.photoshop-service-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 35);
+	margin-top: calc(1vh + 1vw * -1.5);
+	display: flex;
+	justify-content: left;
+}
+.photoshop-service-img-block{
+	width: 55%;
+	height: 90%;
+	background-image: url(/saycheese/assets/images/bg/bg_service2.jpg);
+	background-size: cover;
+	display: flex;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.3);
+	margin-top: calc(1vh + 1vw * 1);
+}
+.photoshop-service-img-text-block{
+	margin: auto;
+	position: relative;
+}
+.photoshop-service-text1{
+	font-family: 'Montserrat-Bold';
+	color: #fff;
+	text-align: center;
+	font-size: calc(1vh + 1vw * .8);
+}
+.photoshop-service-text1::before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(50%);
+	transform: translateY(-60%);
+	width: calc(.1vh + .1vw * .5);
+	height: calc(1vh + 1vw * 4);
+	background-color: #fff;
+}
+.photoshop-service-text2{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	text-align: center;
+	font-size: calc(1vh + 1vw * .8);
+	margin-top: calc(1vh + 1vw * 10);
+}
+.photoshop-service-form-block{
+	width: 45%;
+	height: 90%;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+	background-color: #fff;
+	margin-top: calc(1vh + 1vw * 1);
+	position: relative;
+}
+.photoshop-service-form{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.photoshop-service-input-wrapper{
+	width: 100%;
+	height: 95%;
+	display: flex;
+}
+.photoshop-service-input-block{
+	margin: auto;
+}
+.photoshop-style{
+	margin-bottom: calc(1vh + 1vw * 1);
+}
+.input-file {
+	margin: calc(1vh + 1vw * .4) auto;
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: 0;
+	font-size: calc(1vh + 1vw * .25);
+	color: #fff;
+	text-align: center;
+	background-color: #c6c6c6;
+	border: 0;
+	line-height: calc(1vh + 1vw * 1.5);
+	height: calc(1vh + 1vw * 1.5);
+	padding: 0 calc(1vh + 1vw * 5.3) 0 calc(1vh + 1vw * 5.3);
+	transition: all .2s ease-in-out;
+	font-family: 'Montserrat-Light';
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.input-file:hover span{
+	background-color: #9f9f9f;
+}
+.photoshop-servie-btn-send{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.5);
+	background-color: #747E65;
+	display: flex;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	border: 0;
+	outline: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.1);
+}
+.photoshop-servie-btn-send:hover{
+	background-color: #8E997E;
+}
+
+/*
+	Отзывы
+*/
+
+.reviews-block{
+	width: 100vw;
+}
+.reviews-wrapper{
+	width: 86%;
+	margin: 0 auto;
+}
+.reviews-headline-block{
+	width: 40vw;
+	margin-top: calc(1vh + 1vw * 8);
+	display: flex;
+}
+.reviews-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+	margin: auto 0;
+	transition: all .2s ease-in-out;
+}
+.reviews-headline:hover{
+	color: #8E997E;
+	transform: scale(.95);
+}
+.reviews-list-items-block{
+	width: 100%;
+	margin-top: calc(1vh + 1vw * 3);
+	padding-bottom: calc(1vh + 1vw * 7);
+}
+.reviews-list-items{
+	width: 60%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.review-item{
+	width: calc(1vh + 1vw * 50);
+	margin-bottom: calc(1vh + 1vw * 1.5);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.review-author-avatar{
+	width: calc(1vh +  1vw * 5.8);
+	height: calc(1vh +  1vw * 5.8);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+.review-info-block{
+	width: 82%;
+}
+.review-date-block{
+	width: 100%;
+	height: calc(1vh + 1vw * .8);
+}
+.review-date{
+	font-family: 'Montserrat-Light';
+	color: #8E997E;
+	font-size: calc(1vh + 1vw * .25);
+}
+.review-author-fullname-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 1.5);
+}
+.review-author-fullname{
+	font-family: 'Montserrat-Medium';
+	color: #000;
+	font-size: calc(1vh + 1vw * .7);
+}
+.review-text-block{
+	width: 100%;
+}
+.review-text{
+	font-family: 'Montserrat-Light';
+	color: #000;
+	font-size: calc(1vh + 1vw * .25);
+	word-wrap: break-word;
+	padding-top: calc(1vh + 1vw * .5);
+}

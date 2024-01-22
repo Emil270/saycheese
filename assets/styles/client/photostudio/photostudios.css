@@ -1,0 +1,132 @@
+/*
+	Импорт базовых стилей
+*/
+
+@import url(/saycheese/assets/styles/import/basic.css);
+
+/*
+	Импорт стилей для нава и футера
+*/
+
+@import url(/saycheese/assets/styles/import/nav_footer.css);
+
+/*
+	Импорт стилей для блока с сообщением о статусе операции
+*/
+
+@import url(/saycheese/assets/styles/import/message.css);
+
+*{
+	overflow-x: hidden;
+}
+
+/*
+	Список фотостудий
+*/
+
+.photostudios-content{
+	width: 100%;
+	position: relative;
+}
+.photostudios-wrapper{
+	width: 89%;
+	margin: 0 auto;
+}
+.photostudios-headline-block{
+	width: 100%;
+	margin-top: calc(1vh + 1vw * 10);
+	margin-left: calc(1vh + 1vw * 1);
+}
+.photostudios-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+}
+.photostudio-items-list{
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: calc(1vh + 1vw * 1);
+	padding-left: calc(1vh + 1vw * 1);
+	padding-bottom: calc(1vh + 1vw * 8);
+}
+.photostudio-item{
+	width: calc(1vh + 1vw * 27);
+	height: calc(1vh + 1vw * 35); 
+	position: inherit;
+	box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.1);
+	margin-top: calc(1vh + 1vw * 2);
+}
+.photostudio-item-img{
+	width: 100%;
+	height: calc(1vh + 1vw * 23);
+	background-size: cover;
+	background-position: center;
+}
+.photostudio-item-info-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 7.5);
+	position: relative;
+}
+.photostudio-item-name-price-block{
+	margin-left: calc(1vh + 1vw * 1);
+	margin-top: calc(1vh + 1vw * 1);
+	width: 80%;
+	display: flex;
+	justify-content: left;
+}
+.photostudio-item-name{
+	font-family: 'Montserrat-Medium';
+	color: #000;
+	font-size: calc(1vh + 1vw * .3);
+	word-wrap: break-word;
+}
+.photostudio-item-price{
+	font-family: 'Montserrat-Thin';
+	color: #8E997E;
+	font-size: calc(1vh + 1vw * .3);
+	word-wrap: break-word;
+	margin-left: calc(1vh + 1vw * .2);
+}
+.photostudio-item-address-block{
+	margin-left: calc(1vh + 1vw * 1);
+	margin-top: calc(1vh + 1vw * .2);
+	width: 80%;
+}
+.photostudio-item-address{
+	font-family: 'Montserrat-Thin';
+	color: #000;
+	font-size: calc(1vh + 1vw * .3);
+	word-wrap: break-word;
+}
+.photostudio-item-btns-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.3);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.photostudio-btn-show-more{
+	width: 100%;
+	height: 100%;
+	background-color: #8E997E;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	overflow-y: hidden;
+}
+.photostudio-btn-show-more:hover{
+	background-color: #747E65;
+}
+.btn-link{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.btn-text{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	margin: auto;
+	font-size: calc(1vh + 1vw * .25);
+}

@@ -1,0 +1,300 @@
+/*
+	Импорт базовых стилей
+*/
+
+@import url(/saycheese/assets/styles/import/basic.css);
+
+/*
+	Импорт стилей для нава и футера
+*/
+
+@import url(/saycheese/assets/styles/import/nav_footer.css);
+
+/*
+	Импорт стилей для блока с сообщением о статусе операции
+*/
+
+@import url(/saycheese/assets/styles/import/message.css);
+
+/*
+	Блок с сообщением об ошибкке
+*/
+
+@import url(/saycheese/assets/styles/import/message_error.css);
+
+*{
+	overflow-x: hidden;
+}
+
+/*
+	Стили для окна выбора изображения
+*/
+
+.select-img-wrapper{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .5);
+	display: flex;
+	z-index: 1000;
+}
+.select-img-block{
+	width: calc(1vh + 1vw * 27);
+	height: calc(1vh + 1vw * 13);
+	background-color: white;
+	box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, .3);
+	margin: auto;
+	position: relative;
+}
+.btn-close-input-file{
+	position: absolute;
+	z-index: 9999;
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * 1.5);
+	color: #000;
+	top: calc(.5vh + .5vw * .1);
+	right: calc(1vh + 1vw * .5);
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	user-select: none;
+}
+.btn-close-input-file:hover{
+	transform: rotate(90deg) scale(0.9);
+}
+.select-img-headline-block{
+	width: 100%;
+	height: 40%;
+	display: flex;
+}
+.select-img-headline{
+	font-family: 'Montserrat-Medium';
+	color: #000;
+	font-size: calc(1vh + 1vw * .5);
+	text-align: center;
+	margin: auto;
+}
+.form-select-img{
+	width: 100%;
+	height: 60%;
+	display: flex;
+	position: relative;
+}
+.input-file {
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: 0;
+	font-size: calc(1vh + 1vw * .25);
+	color: #fff;
+	text-align: center;
+	background-color: #c6c6c6;
+	border: 0;
+	line-height: calc(1vh + 1vw * 2);
+	height: calc(1vh + 1vw * 2);
+	padding: 0 calc(1vh + 1vw * 3) 0 calc(1vh + 1vw * 3);
+	transition: all .2s ease-in-out;
+	font-family: 'Montserrat-Light';
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.input-file:hover span{
+	background-color: #9f9f9f;
+}
+
+/*
+	Основной контент
+*/
+
+.edit-profile-content{
+	width: 100vw;
+	padding-bottom: calc(1vh + 1vw * 8);
+}
+.edit-profile-wrapper{
+	width: 89%;
+	margin: 0 auto;
+}
+.edit-profile-headline-block{
+	width: 50%;
+	margin-top: calc(1vh + 1vw * 10);
+	margin-left: calc(1vh + 1vw * 1);
+}
+.edit-profile-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+	margin: auto 0;
+}
+
+/*
+	Редактирование аватара
+*/
+
+.edit-profile-card-block{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+.profile-avatar-block{
+	width: calc(1vh + 1vw * 26);
+}
+.profile-avatar-wrapper{
+	width: calc(1vh + 1vw * 23);
+	height: calc(1vh + 1vw * 23);
+	margin-left: calc(1vh + 1vw * 1);
+	margin-top: calc(1vh + 1vw * 3);
+	box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, .1);
+	display: flex;
+}
+.profile-avatar{
+	width: 70%;
+	height: 70%;
+	margin: auto;
+	border-radius: 50%;
+	border: 1px solid #c6c6c6;
+	background-image: url(/saycheese/assets/images/bg/defka.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.btns-edit-avatar-block{
+	width: calc(1vh + 1vw * 23);
+	height: calc(1vh + 1vw * 2);
+	margin-left: calc(1vh + 1vw * 1);
+	display: flex;
+	justify-content: flex-start;
+}
+.btn-link{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	transition: all .3s ease-in-out;
+}
+.btn-link:hover{
+	width: 70%;
+}
+.btn_edit_avatar{
+	width: 100%;
+	height: 100%;
+	background-color: #747E65;
+	display: flex;
+	cursor: pointer;
+	outline: 0;
+	border: 0;
+}
+.btn_delete_avatar{
+	width: 100%;
+	height: 100%;
+	background-color: #8E997E;
+	cursor: pointer;
+	outline: 0;
+	border: 0;
+}
+.btn-text{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	font-size: calc(1vh + 1vw * .25);
+	margin: auto;
+	user-select: none;
+}
+
+/*
+	Редактирвоание личных данных
+*/
+
+.edit-profile-forms{
+	width: 60%;
+}
+.edit-profile-forms-wrapper{
+	width: 100%;
+	margin-top: calc(1vh + 1vw * 3);
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: calc(1vh + 1vw * 2);
+	padding-left: calc(1vh + 1vw * 2);
+}
+.edit-fullname-block{
+	width: calc(1vh + 1vw * 22);
+	height: calc(1vh + 1vw * 22);
+	position: relative;
+	box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, .1);
+}
+
+.edit-email-block{
+	width: calc(1vh + 1vw * 22);
+	height: calc(1vh + 1vw * 22);
+	margin-left: calc(1vh + 1vw * 1);
+	box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, .1);
+}
+.edit-phone-block{
+	width: calc(1vh + 1vw * 22);
+	height: calc(1vh + 1vw * 22);
+	margin-top: calc(1vh + 1vw * 1);
+	box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, .1);
+}
+.edit-password-block{
+	width: calc(1vh + 1vw * 22);
+	height: calc(1vh + 1vw * 22);
+	margin-top: calc(1vh + 1vw * 1);
+	margin-left: calc(1vh + 1vw * 1);
+	box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, .1);
+}
+.edit-form-headline-block{
+	width: 100%;
+	height: 15%;
+	background-color: #8E997E;
+	display: flex;
+}
+.edit-form-headline{
+	font-family: 'Montserrat-Medium';
+	color: #fff;
+	font-size: calc(1vh + 1vw * .4);
+	margin: auto;
+}
+.edit-form{
+	width: 100%;
+	height: 85%;
+	position: relative;
+}
+.input-edit:first-child{
+	margin-top: calc(1vh + 1vw * 4);
+}
+.input-edit{
+	border: none;
+	outline: none;
+	box-shadow: none;
+	background: transparent;
+	border-bottom: 1px solid #8E997E;
+	width: calc(1vh + 1vw * 15);
+	height: calc(1vh + 1vw * 1.3);
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw* .25);
+	margin-bottom: calc(1vh + 1vw * 2);
+	margin-left: calc(1vh + 1vw * 3);
+}
+.btn_edit{
+	position: absolute;
+	width: 100%;
+	height: calc(1vh + 1vw * 2);
+	background-color: #747E65;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	outline: 0;
+	border: 0;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+.btn_edit:hover{
+	background-color: #8E997E;
+}

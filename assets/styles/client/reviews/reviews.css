@@ -1,0 +1,260 @@
+/*
+	Импорт базовых стилей
+*/
+
+@import url(/saycheese/assets/styles/import/basic.css);
+
+/*
+	Импорт стилей для нава и футера
+*/
+
+@import url(/saycheese/assets/styles/import/nav_footer.css);
+
+/*
+	Импорт стилей для блока с сообщением о статусе операции
+*/
+
+@import url(/saycheese/assets/styles/import/message.css);
+
+/*
+	Импорт стилей для блока с сообщением об ошибки
+*/
+
+@import url(/saycheese/assets/styles/import/message_error.css);
+
+*{
+	overflow-x: hidden;
+}
+
+/*
+	Форма добавления нового отзыва
+*/
+
+.add-review-wrapper{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+}
+.add-review-block{
+	width: calc(1vh + 1vw * 40);
+	height: calc(1vh + 1vw * 25);
+	background-color: white;
+	box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, .3);
+	margin: auto;
+	position: relative;
+
+}
+.btn-close-add-review{
+	position: absolute;
+	z-index: 9999;
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * 1.5);
+	color: #000;
+	top: calc(.5vh + .5vw * .1);
+	right: calc(1vh + 1vw * .5);
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	user-select: none;
+}
+.btn-close-add-review:hover{
+	transform: rotate(90deg) scale(0.9);
+}
+.add-review-headline-block{
+	width: 100%;
+	height: 20%;
+	display: flex;
+}
+.add-review-headline{
+	font-family: 'Montserrat-Medium';
+	color: #000;
+	font-size: calc(1vh + 1vw * .5);
+	text-align: center;
+	margin: auto auto 0 auto;
+}
+#add-review-form{
+	width: 100%;
+	height: 80%;
+	position: relative;
+	display: flex;
+}
+.review_text{
+	width: calc(1vh + 1vw * 25);
+	height: calc(1vh + 1vw * 12);
+	margin: calc(1vh + 1vw * 2) auto;
+	resize: none;
+	outline: none;
+	border: 1px solid #c6c6c6;
+	padding: calc(1vh + 1vw * .5);
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .25);
+}
+.btn-add-review{
+	position: absolute;
+	width: 100%;
+	height: calc(1vh + 1vw * 2);
+	background-color: #747E65;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	outline: 0;
+	border: 0;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+.btn-add-review:hover{
+	background-color: #8E997E;
+}
+.btn-text{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	font-size: calc(1vh + 1vw * .25);
+	margin: auto;
+	user-select: none;
+}
+
+/*
+	Основной контент
+*/
+
+.reviews-content{
+	width: 100vw;
+	padding-bottom: calc(1vh + 1vw * 4);
+}
+.reviews-wrapper{
+	width: 86%;
+	margin: 0 auto;
+}
+.reviews-headline-block{
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: calc(1vh + 1vw * 10);
+}
+.reviews-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+	margin: auto 0;
+}
+.btn-open-add-review{
+	margin: auto calc(1vh + 1vw * 1);
+	font-family: 'Montserrat-Light';
+	color: #8E997E;
+	font-size: calc(1vh + 1vw * .25);
+	cursor: pointer;
+}
+.no-login{
+	margin: auto calc(1vh + 1vw * 1);
+	font-family: 'Montserrat-Light';
+	color: #8E997E;
+	font-size: calc(1vh + 1vw * .25);
+	cursor: pointer;
+}
+
+/*
+	Список отзывов
+*/
+
+.reviews-list-block{
+	width: 100%;
+	display: flex;
+	margin-top: calc(1vh + 1vw * 3);
+}
+
+.reviews-list-items{
+	width: 60%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.review-item{
+	width: calc(1vh + 1vw * 50);
+	margin-bottom: calc(1vh + 1vw * 1.5);
+	margin-right: calc(1vh + 1vw * 5);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.review-author-avatar{
+	width: calc(1vh +  1vw * 5.8);
+	height: calc(1vh +  1vw * 5.8);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+.review-info-block{
+	width: 82%;
+}
+.review-date-block{
+	width: 100%;
+	height: calc(1vh + 1vw * .8);
+}
+.review-date{
+	font-family: 'Montserrat-Light';
+	color: #8E997E;
+	font-size: calc(1vh + 1vw * .25);
+}
+.review-author-fullname-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 1.5);
+}
+.review-author-fullname{
+	font-family: 'Montserrat-Medium';
+	color: #000;
+	font-size: calc(1vh + 1vw * .7);
+}
+.review-text-block{
+	width: 100%;
+}
+.review-text{
+	font-family: 'Montserrat-Light';
+	color: #000;
+	font-size: calc(1vh + 1vw * .25);
+	word-wrap: break-word;
+	padding-top: calc(1vh + 1vw * .5);
+}
+
+/*
+	Кнопки (пагинация)
+*/
+
+.pagination-block{
+	width: 100%;
+	margin: 0 auto;
+	height: calc(1vh + 1vw * 8);
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: calc(1vh + 1vw * -2);
+	overflow-y: hidden;
+}
+.btn_pages_block{
+	margin: auto;
+	padding: calc(1vh + 1vw * 1);
+}
+.btn-edit-page{
+	width: calc(1vh + 1vw * 10);
+	height: calc(1vh + 1vw * 2);
+	outline: 0;
+	border: 1px solid lightgray;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .25);
+	background-color: #fff;
+	transition: all .2s ease-in-out;
+}
+.btn-edit-page[disabled]{
+	cursor:no-drop;
+}
+.btn-edit-page:hover[disabled]{
+	box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.0);
+}
+.btn-edit-page:hover{
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+}
+.next-page{
+	margin-left: calc(1vh + 1vw * 3);
+}

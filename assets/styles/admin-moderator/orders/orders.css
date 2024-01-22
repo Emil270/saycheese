@@ -1,0 +1,251 @@
+/*
+	Импорт базовых стилей
+*/
+
+@import url(/saycheese/assets/styles/import/basic.css);
+
+/*
+	Импорт стилей для нава и футера
+*/
+
+@import url(/saycheese/assets/styles/import/nav_footer.css);
+
+*{
+	overflow-x: hidden;
+}
+
+/*
+	Основной контент
+*/
+
+.orders-content{
+	width: 100%;
+	padding-bottom: calc(1vh + 1vw * 5);
+}
+.orders-wrapper{
+	width: 89%;
+	margin: 0 auto;
+}
+.orders-headline-block{
+	margin-top: calc(1vh + 1vw * 8);
+	margin-left: calc(1vh + 1vw * 1);
+}
+.orders-headline{
+	font-family: 'Montserrat-Black';
+	color: #747E65;
+	font-size: calc(1vh + 1vw * 1.5);
+}
+
+/*
+	Поиск по номеру заказа
+*/
+
+.orders-search-block{
+	width: 40%;
+	height: calc(1vh + 1vw * 2);
+	display: flex;
+	justify-content: flex-start;
+	margin-top: calc(1vh + 1vw * 3);
+}
+.orders-search{
+	border: none;
+	outline: none;
+	box-shadow: none;
+	background: transparent;
+	border-bottom: 1px solid #8E997E;
+	width: calc(1vh + 1vw * 17);
+	height: calc(1vh + 1vw * 1.3);
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .25);
+	margin-left: calc(1vh + 1vw * 1);
+}
+.btn-go-search{
+	width: calc(1vh + 1vw * 9);
+	height: calc(1vh + 1vw * 1.3);
+	background-color: #747E65;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	outline: 0;
+	border: 0;
+	color: #fff;
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .25);
+	margin-left: calc(1vh + 1vw * 1);
+}
+.btn-go-search:hover{
+	background-color: #8E997E;
+	width: calc(1vh + 1vw * 10);
+}
+
+/*
+	Стили для отображения заказов
+*/
+
+.orders-list{
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: calc(1vh + 1vw * 1);
+}
+.order-block{
+	width: calc(1vh + 1vw * 41);
+	box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.1);
+	margin-top: calc(1vh + 1vw * 1);
+	margin-bottom: calc(1vh + 1vw * .6);
+	padding-bottom: calc(1vh + 1vw * 7.2);
+	position: relative;
+}
+.order-wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+.order-headline-block{
+	width: 100%;
+	margin-top: calc(1vh + 1vw * 5);
+}
+.order-headline{
+	color: #8E997E;
+	font-family: 'Montserrat-Bold';
+	font-size: calc(1vh + 1vw * .8);
+}
+.order-inform-block{
+	width: 100%;
+	margin-top: calc(1vh + 1vw * 2);
+}
+.order-inform{
+	color: #000;
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .25);
+	line-height: calc(1vh + 1vw * 1);
+}
+.order-positions-block{
+	width: 100%;
+	margin-top: calc(1vh + 1vw * 2);
+}
+.order-positioms-headline{
+	font-family: 'Montserrat-Bold';
+	font-size: calc(1vh + 1vw * .25);
+	color: #000;
+	padding-bottom: calc(1vh + 1vw * .3);
+}
+.order-positions-list{
+	line-height: calc(1vh + 1vw * 1);
+}
+.order-position{
+	color: #000;
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .25);
+	transition: all .2s ease-in-out;
+}
+.order-position:hover{
+	margin-left: calc(1vh + 1vw * .1);
+	color: #8E997E;
+}
+.order-btns-block{
+	width: 100%;
+	height: calc(1vh + 1vw * 2.2);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: flex-start;
+}
+.btn_edit_order_status{
+	width: 16.66%;
+	height: 100%;
+	background-color: #8E997E;
+	display: flex;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	outline: 0;
+	border: 0;
+}
+.btn_edit_order_status:hover{
+	background-color: #747E65;
+	width: 20%;
+}
+.btn_status_selected{
+	width: 16.66%;
+	height: 100%;
+	background-color: #747E65;
+	display: flex;
+	cursor: no-drop;
+	outline: 0;
+	border: 0;
+}
+.btn-text{
+	font-family: 'Montserrat-Light';
+	color: #fff;
+	font-size: calc(1vh + 1vw * .15);
+	margin: auto;
+}
+
+/*
+	Блок, сообщабщий, что заказов нет
+*/
+
+.orders-no-items-block{
+	width: 100%;
+	display: flex;
+	height: calc(1vh + 1vw * 25);
+}
+.orders-no-item-wrapper{
+	margin: auto;
+}
+.orders-no-item-img{
+	width: calc(1vh + 1vw * 7);
+	height: calc(1vh + 1vw * 7);
+	margin-left: calc(1vh + 1vw * -.5);
+	background-image: url(/saycheese/assets/images/icons/ghost.jpg);
+	background-size: cover;
+}
+.orders-no-items{
+	text-align: center;
+	font-family: 'Montserrat-Medium';
+	color: #999999;
+	font-size: calc(1vh + 1vw * .5);
+}
+
+/*
+	Кнопки (пагинация)
+*/
+
+.pagination-block{
+	width: 100%;
+	margin: 0 auto;
+	height: calc(1vh + 1vw * 8);
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: calc(1vh + 1vw * -2);
+	overflow-y: hidden;
+}
+.btn_pages_block{
+	margin: auto;
+	padding: calc(1vh + 1vw * 1);
+}
+.btn-edit-page{
+	width: calc(1vh + 1vw * 10);
+	height: calc(1vh + 1vw * 2);
+	outline: 0;
+	border: 1px solid lightgray;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	font-family: 'Montserrat-Light';
+	font-size: calc(1vh + 1vw * .25);
+	background-color: #fff;
+	transition: all .2s ease-in-out;
+}
+.btn-edit-page[disabled]{
+	cursor:no-drop;
+}
+.btn-edit-page:hover[disabled]{
+	box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.0);
+}
+.btn-edit-page:hover{
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+}
+.next-page{
+	margin-left: calc(1vh + 1vw * 3);
+}
